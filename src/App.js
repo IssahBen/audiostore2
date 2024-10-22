@@ -2,6 +2,7 @@ import Checkout from "./Components/Checkout/Checkout";
 import Earphones from "./Components/Earphones/earphones";
 import Headphones from "./Components/Headphones/headphones";
 import Home from "./Components/Home/Home";
+import PageNotFound from "./Components/Home/PageNotFound";
 import VMARK1 from "./Components/ProductMark1/VMark1";
 import VMARK2 from "./Components/ProductMark2/VMark2";
 import VXX59 from "./Components/ProductXX59/VXX59";
@@ -30,6 +31,7 @@ function App() {
           <Route path="earphones" element={<Earphones />} />
           <Route path="earphones/yx1" element={<VYX1 />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </DataProvider>
